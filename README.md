@@ -1,4 +1,4 @@
-# Lab 8 - *Name of App Here*
+# Lab 8 - *TinderForDavids*
 
 **Tinder** is a mock Tindr app featuring gestures and custom transitions
 
