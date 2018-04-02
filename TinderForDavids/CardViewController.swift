@@ -14,6 +14,8 @@ class CardViewController: UIViewController {
    var newCard: UIImageView?
     var rotation:CGFloat = 0
     @IBOutlet weak var CardView: UIImageView!
+    var cardviewimage: UIImage?
+
     //everytime cardview is paned create a duplicate of the image to move, delete the image in the original cardview or give it another image find another pic maybe
     
     func panCard(sender: UIPanGestureRecognizer) {
@@ -33,6 +35,7 @@ class CardViewController: UIViewController {
         newCard = UIImageView(frame: Card.frame)
        newCard!.image = Card.image
         //newCard = UIImageView(image: Card.image!)
+        
         
         initialCardPos = Card.center
         view.addSubview(newCard!)
@@ -80,6 +83,25 @@ class CardViewController: UIViewController {
         }
     }
     
+    func touchCard(sender: UITapGestureRecognizer){
+        print("cardview image \(CardView.image)")
+       performSegue(withIdentifier: "Info", sender: self)
+        
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detail = segue.destination as! InfoViewController
+        if let card = cardviewimage{
+            
+             print("cardview image \(card)")
+            detail.InfoCardImage = card
+        
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -87,6 +109,10 @@ class CardViewController: UIViewController {
             let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panCard(sender:)))
             CardView.addGestureRecognizer(panGesture)
             CardView.isUserInteractionEnabled = true
+        let g = UITapGestureRecognizer(target: self, action: #selector(touchCard(sender:)))
+        CardView.addGestureRecognizer(g)
+        cardviewimage = CardView.image
+        
         
         
         

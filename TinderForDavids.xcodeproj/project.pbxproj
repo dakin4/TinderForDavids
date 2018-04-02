@@ -14,6 +14,7 @@
 		1B99B92720706822007B5A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B99B92520706822007B5A55 /* LaunchScreen.storyboard */; };
 		1B99B93220706822007B5A55 /* TinderForDavidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99B93120706822007B5A55 /* TinderForDavidsTests.swift */; };
 		1B99B93D20706822007B5A55 /* TinderForDavidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99B93C20706822007B5A55 /* TinderForDavidsUITests.swift */; };
+		1B99EF762071B4FC00F4ECAF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99EF752071B4FC00F4ECAF /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1B99B93820706822007B5A55 /* TinderForDavidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderForDavidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B99B93C20706822007B5A55 /* TinderForDavidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderForDavidsUITests.swift; sourceTree = "<group>"; };
 		1B99B93E20706822007B5A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B99EF752071B4FC00F4ECAF /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				1B99B91C20706822007B5A55 /* AppDelegate.swift */,
 				1B99B91E20706822007B5A55 /* CardViewController.swift */,
 				1B99B92020706822007B5A55 /* Main.storyboard */,
+				1B99EF752071B4FC00F4ECAF /* InfoViewController.swift */,
 				1B99B92320706822007B5A55 /* Assets.xcassets */,
 				1B99B92520706822007B5A55 /* LaunchScreen.storyboard */,
 				1B99B92820706822007B5A55 /* Info.plist */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B99B91F20706822007B5A55 /* CardViewController.swift in Sources */,
+				1B99EF762071B4FC00F4ECAF /* InfoViewController.swift in Sources */,
 				1B99B91D20706822007B5A55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

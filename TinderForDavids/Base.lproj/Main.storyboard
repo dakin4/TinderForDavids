@@ -36,17 +36,17 @@
                     <navigationItem key="navigationItem" id="7Ng-YS-bej"/>
                     <connections>
                         <outlet property="CardView" destination="Rrc-6X-KHv" id="7by-4W-qLx"/>
-                        <segue destination="bPQ-rE-Knl" kind="show" id="tbD-fP-spD"/>
+                        <segue destination="bPQ-rE-Knl" kind="show" identifier="Info" id="tbD-fP-spD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1104.8" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="VpC-7g-9ht">
             <objects>
-                <viewController id="bPQ-rE-Knl" sceneMemberID="viewController">
+                <viewController id="bPQ-rE-Knl" customClass="InfoViewController" customModule="TinderForDavids" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nSS-oT-kcb"/>
                         <viewControllerLayoutGuide type="bottom" id="CrO-PR-fTD"/>
@@ -70,6 +70,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="CardImage" destination="vj3-Q3-iQZ" id="mO5-bW-TQK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qq8-1V-i9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
